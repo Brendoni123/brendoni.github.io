@@ -31,7 +31,7 @@
   
   #navbar__logo {
     background-color: #fff;
-    background-image: linear-gradient(to top, #006ec9 0%, #fff 100%);
+    background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -215,17 +215,9 @@
   }
   
   .hero__heading span {
-    background: #006ec9; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to top,
-      #006ec9,
-      #fff
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to top,
-      #006ec9,
-      #fff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #ff087b 0%, #ed1a52 100%); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #ff087b 0%, #ed1a52 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -287,7 +279,7 @@
   }
   
   .main__content {
-    color: #fff;
+    color: #ffffff;
     width: 100%;
   }
   
@@ -332,9 +324,9 @@
   
   .main__btn {
     font-size: 1.8rem;
-    background: #006ec9;
-    background: -webkit-linear-gradient(to right, #006ec9, #004869, #ffffff);
-    background: linear-gradient(to right, #006ec9, #00aeff, #00a7b3);
+    background: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+    background: -webkit-linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+    background: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
     padding: 20px 60px;
     border: none;
     border-radius: 4px;
@@ -495,7 +487,7 @@
   
   .services__wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
   
@@ -526,6 +518,20 @@
     background-image: url(mpmt.png);
     -webkit-background-size: cover;
     background-repeat: no-repeat
+  }
+
+  .services__card:nth-child(4) 
+  {
+    background-image: url(PCBImage.png);
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .services__card:nth-child(5) 
+  {
+    background-image: url(https://i.redd.it/e4dcogw7zql91.jpg);
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
   }
   
   .services__card h2 {
@@ -580,13 +586,13 @@
     cursor: pointer;
   }
   
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1280px) {
     .services__wrapper {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
     }
   }
   
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 1080px) {
     .services__wrapper {
       grid-template-columns: 1fr;
     }
